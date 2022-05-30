@@ -11,7 +11,7 @@ public class VariableType {
         System.out.println("i2=" + i2);
         System.out.println("i3=" + i3);
         System.out.println("i4=" + i4);
-        System.out.println("i4=" + i4);
+        System.out.println("i5=" + i5);
         System.out.println("l=" + l);
         
         
