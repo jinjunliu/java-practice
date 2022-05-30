@@ -1,5 +1,5 @@
 
-public class main {
+public class VariableType {
 	public static void main(String args[]) {
         int i = 2147483647;
         int i2 = -2147483648;

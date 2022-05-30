@@ -1,5 +1,5 @@
 
-public class main {
+public class JavaOperations {
 	public static void main(String args[]) {
 	    int x = 2147483640;
 	    int y = 15;
