@@ -27,6 +27,11 @@ class Person {
     private int age;
     private int birth;
 
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+    
     public String getName() {
         return this.name;
     }
