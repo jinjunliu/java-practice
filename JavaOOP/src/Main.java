@@ -1,11 +1,26 @@
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
         Person ming = new Person();
         ming.setName("Xiao Ming"); // 设置name
         ming.setAge(12); // 设置age
         System.out.println(ming.getName() + ", " + ming.getAge());
+        
+        Group group1 = new Group();
+        group1.setNames("Zhang San", "Li Si");
+        System.out.println(Arrays.toString(group1.getNames()));
+        
+        Group g = new Group();
+        g.setNames(new String[] {"Xiao Ming", "Xiao Hong", "Xiao Jun"}); // 传入1个String[]
+        System.out.println(Arrays.toString(g.getNames()));
+        
+        Group g1 = new Group();
+        g.setNames();
+        System.out.println(g1.getNames());
     }
 }
+
 
 class Person {
     private String name;
@@ -37,5 +52,17 @@ class Person {
     // private方法:
     private int calcAge(int currentYear) {
         return currentYear - this.birth;
+    }
+}
+
+class Group {
+    private String[] names;
+
+    public void setNames(String... names) {
+        this.names = names;
+    }
+    
+    public String[] getNames() {
+    	return this.names;
     }
 }
