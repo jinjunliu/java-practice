@@ -24,13 +24,21 @@ public class Main {
 
 
 class Person {
-    private String name;
+    private String name = "unnamed"; // default value
     private int age;
     private int birth;
 
     public Person(String name, int age) {
         this.name = name;
         this.age = age;
+    }
+    
+    public Person(String name) {
+        this(name, 18); // 调用另一个构造方法Person(String, int)
+    }
+
+    public Person() {
+        this("Unnamed"); // 调用另一个构造方法Person(String)
     }
     
     public String getName() {
