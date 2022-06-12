@@ -41,7 +41,7 @@ public class Main {
 }
 
 class Person {
-	final String name;
+	final String name; // can not modify name after an instance is created
 	
 	public Person () {
 		this("unnamed");
