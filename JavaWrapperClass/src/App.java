@@ -10,11 +10,21 @@ public class App {
         // auto boxing
         Integer n4 = 100;
         // auto unboxing
-        int x = n4;
+        int n5 = n4;
         // System.out.println(n1.intValue());
         System.out.println(n2.intValue());
         System.out.println(n3.intValue());
         System.out.println(n4);
-        System.out.println(x);
+        System.out.println(n5);
+
+        // == or equals?
+        Integer x = 127;
+        Integer y = 127;
+        Integer m = 99999;
+        Integer n = 99999;
+        System.out.println("x == y: " + (x==y)); // true
+        System.out.println("m == n: " + (m==n)); // false
+        System.out.println("x.equals(y): " + x.equals(y)); // true
+        System.out.println("m.equals(n): " + m.equals(n)); // true
     }
 }
