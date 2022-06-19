@@ -4,6 +4,7 @@ public class App {
         // 通过new操作符创建Integer实例(不推荐使用,会有编译警告):
         // Integer n1 = new Integer(i);
         // 通过静态方法valueOf(int)创建Integer实例:
+        // 能创建“新”对象的静态方法称为静态工厂方法
         Integer n2 = Integer.valueOf(i);
         // 通过静态方法valueOf(String)创建Integer实例:
         Integer n3 = Integer.valueOf("100");
