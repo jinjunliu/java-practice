@@ -1,3 +1,5 @@
+import javax.swing.text.StyledEditorKit;
+
 public class App {
     public static void main(String[] args) throws Exception {
         int i = 100;
@@ -32,5 +34,42 @@ public class App {
         byte yb = 127;
         System.out.println(Byte.toUnsignedInt(xb)); // 255
         System.out.println(Byte.toUnsignedInt(yb)); // 127
+
+        int x1 = Integer.parseInt("100"); // 100
+        int x2 = Integer.parseInt("100", 16); // 256,因为按16进制解析
+        System.out.println(x1); // 255
+        System.out.println(x2); // 127
+
+        // boolean只有两个值true/false，其包装类型只需要引用Boolean提供的静态字段:
+        Boolean t = Boolean.TRUE;
+        Boolean f = Boolean.FALSE;
+        System.out.println(t);
+        System.out.println(f);
+
+        // int可表示的最大/最小值:
+        int max = Integer.MAX_VALUE; // 2147483647
+        int min = Integer.MIN_VALUE; // -2147483648
+        System.out.println(max);
+        System.out.println(min);
+
+        // long类型占用的bit和byte数量:
+        int sizeOfLong = Long.SIZE; // 64 (bits)
+        int bytesOfLong = Long.BYTES; // 8 (bytes)
+        System.out.println(sizeOfLong);
+        System.out.println(bytesOfLong);
+
+        // 向上转型为Number:
+        Number num = Integer.valueOf("999");
+        // 获取byte, int, long, float, double:
+        byte b = num.byteValue();
+        int n1 = num.intValue();
+        long ln = num.longValue();
+        float f1 = num.floatValue();
+        double d = num.doubleValue();
+        System.out.println(b);
+        System.out.println(n1);
+        System.out.println(ln);
+        System.out.println(f1);
+        System.out.println(d);
     }
 }
