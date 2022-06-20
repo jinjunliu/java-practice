@@ -27,5 +27,10 @@ public class App {
         System.out.println("m == n: " + (m==n)); // false
         System.out.println("x.equals(y): " + x.equals(y)); // true
         System.out.println("m.equals(n): " + m.equals(n)); // true
+
+        byte xb = -1;
+        byte yb = 127;
+        System.out.println(Byte.toUnsignedInt(xb)); // 255
+        System.out.println(Byte.toUnsignedInt(yb)); // 127
     }
 }
