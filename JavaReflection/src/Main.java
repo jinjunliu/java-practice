@@ -17,5 +17,6 @@ public class Main {
         System.out.println("is enum: " + cls.isEnum());
         System.out.println("is array: " + cls.isArray());
         System.out.println("is primitive: " + cls.isPrimitive());
+        System.out.print("\n");
     }
 }
