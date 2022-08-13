@@ -27,22 +27,4 @@ public class GetField {
 }
 
 
-class Student extends Person {
-    public int score;
-    private int grade;
 
-    public Student(String name) {
-        super(name);
-    }
-}
-
-class Person {
-    public String name;
-    public Person(String name) {
-        this.name = name;
-    }
-
-    public String getName() {
-        return name;
-    }
-}
