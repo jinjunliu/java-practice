@@ -6,11 +6,11 @@ class Student extends Person {
         super(name);
     }
 
-    public int getScore(String course) {
+    public int getScore() {
         return score;
     }
 
-    private int getGrade(int score) {
+    int getGrade() {
         return grade;
     }
 }
